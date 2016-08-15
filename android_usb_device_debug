@@ -1,0 +1,5 @@
+adb kill-server
+
+
+/* decause user primiss , use root to start service */
+sudo adb start-server

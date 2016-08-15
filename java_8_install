@@ -1,0 +1,24 @@
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+
+
+
+ accepted
+	
+
+You can set your JAVA_HOME in /etc/profile as Petronilla Escarabajo suggests. But the preferred location for JAVA_HOME or any system variable is /etc/environment.
+
+Open /etc/environment in any text editor like nano or gedit and add the following
+
+JAVA_HOME="/usr/lib/jvm/open-jdk" (java path could be different)
+
+Use source to load the variables, by running this command:
+
+source /etc/environment
+
+Then check the variable, by running this command:
+
+echo $JAVA_HOME
+
+
