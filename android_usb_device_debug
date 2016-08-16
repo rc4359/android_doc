@@ -1,3 +1,5 @@
+sudo apt-get android-tools-adb
+
 adb kill-server
 
 
